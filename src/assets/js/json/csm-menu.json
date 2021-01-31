@@ -1,0 +1,13 @@
+{
+    "//": "csm sidebar menu content",
+    "data": {
+        "home": {},
+        "calling": {},
+        "knowledge-manage": {},
+        "dialing-service": {},
+        "activity-manage": {},
+        "organization": {},
+        "statics": {},
+        "system-manage": {}
+    }
+}
