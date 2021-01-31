@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { Injector, NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
@@ -11,9 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from './modal/modal.component';
 
+import { NzModalModule } from 'ng-zorro-antd/modal';
+
 registerLocaleData(en);
 
-@NgModule({
+@NgModule({ 
   declarations: [AppComponent, ModalComponent],
   imports: [
     BrowserModule,
@@ -24,8 +25,11 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NzModalModule,
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
+  providers   : [
+    { provide: NZ_I18N, useValue: en_US }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
