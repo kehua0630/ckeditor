@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Injector, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { EditMessageModalComponent } from './edit-message-modal/edit-message-modal.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
@@ -15,7 +14,7 @@ import { ModalComponent } from './modal/modal.component';
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, EditMessageModalComponent, ModalComponent],
+  declarations: [AppComponent, ModalComponent],
   imports: [
     BrowserModule,
     FormsModule,
