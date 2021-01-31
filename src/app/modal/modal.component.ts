@@ -6,9 +6,15 @@ declare var CKEDITOR: any;
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent implements OnInit {
+  jobDescription: any = {};
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.setCkeditor(this.jobDescription);
+    });
+  }
 
   //編輯器
   private setCkeditor($scope: any) {
